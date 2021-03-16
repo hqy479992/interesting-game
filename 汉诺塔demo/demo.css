@@ -1,0 +1,53 @@
+
+.content{
+    position: relative;
+    width:800px;
+    height:400px;
+    margin:15px auto;
+    border:1px solid #000;
+    /* 柱子位置均匀分在容器内 */
+    display: flex;
+    justify-content: space-around;
+    /* 方法一外部的padding,再配合 box-sizing */
+    /* padding-top:80px;
+    padding-bottom:20px;
+    box-sizing: border-box; */
+}
+
+.column{
+    
+    width:20px;
+    height:300px;
+    background: lightgray;
+    border-radius: 10px 10px 0 0;
+    /* 方法二 相对于content*/
+    margin-top: 80px;
+
+    /* 圆盘的位置,相对于column从下往上排 */
+    display: flex; 
+    flex-direction: column-reverse;
+}
+.line{
+    height:20px;
+    width:800px ;
+    background:#333;
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+.circle{
+    width:100px;
+    height:20px;
+    border-radius: 10px 10px 10px 10px;
+    border:0.3px solid #fcc;
+    background: darkturquoise;
+}
+.btns{
+    width:800px;
+    margin:15px auto;
+    display: flex;
+    justify-content: space-around;
+}
+ button{
+     margin: 10px;
+ }

@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#prize{
+    position: absolute;
+    z-index: 3;
+}
+.item{
+    width:400px;
+    height: 400px;
+    position: absolute;
+    text-align: center;
+    line-height: 400px;
+    color: crimson;
+    /* 文字不被选中 */
+    user-select: none;  
+}

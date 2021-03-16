@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: #f7f7f7;
+}
+.banner{
+    position: relative;
+    width: 1180px;
+    height: 60px;
+    margin:  0 auto;
+    border:1px solid #e6e6e6;
+    background: white;
+    top: 150px;
+}
+.banner a{
+    position: absolute;
+    display: block;
+    width: 186px;
+    height: 55px;
+    right: 0;
+    top:-50px;
+
+}
+.banner a img{
+   width: 100%;
+   height: 100%;
+}
+/* 蒙层 */
+
+.mask{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 180px;
+    width: 360px;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 5px;
+}
+.container .head{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    height: 44px;
+    border-bottom: 1px solid #eee;
+    
+}
+.container .head a{
+    display: block;
+    float: right;
+    color: #cccccc;
+    
+}
+.container .head p{
+    float: left;
+}
+.container .head a:hover{
+    color: #5292d9;
+}
+/* 下半部分 */
+.cont-body{
+    width: 300px;
+    padding: 15px 30px;
+}
+.cont-body .inner-body{
+    font-size: 12px;
+    margin: 0 auto;
+    background: #dbf0fa;
+    box-shadow: 1px 1px 2px #dddddd;
+
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+.cont-body .inner-body h2{
+    width: 186px;
+    height: 188px;
+    background: url(../img/ico.png) 0 -120px no-repeat;
+    margin: 0 auto;
+}
+.cont-body .inner-body button{
+    display: block;
+    width: 271px;
+    height: 40px;
+    background: url(../img/ico.png) 0 0 no-repeat;
+    margin: -45px auto 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.cont-body .inner-body .sign{
+    position: relative;
+    text-align: center;
+    color: #777777;
+    margin-bottom: 15px;
+}
+.cont-body .inner-body .sign::after{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 7px;
+    background: #cccccc;
+    left: 16px;
+    top:5px;
+}
+.cont-body .inner-body .sign::before{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 7px;
+    background: #cccccc;
+    right: 16px;
+    top: 5px;
+}
+
+.cont-body .inner-body ul{
+    margin: 0 auto;
+    color: #555555;
+    height: 180px;
+    overflow: hidden;
+  
+}
+.cont-body .inner-body ul li{
+    margin-left: 15px;
+    padding-left: 5px;
+    height: 18px;
+    line-height: 18px;
+}
+.cont-body .inner-body ul li.takeout{
+    color: #fe5a23;
+    font-weight: 600;
+    height: 19px;
+    line-height: 19px;
+    background: url(../img/ico.png) 0 -320px no-repeat;
+}
+
+/* 鼠标划过 */
+.cont-body .inner-body button:hover{
+  background-position: 0 -40px;
+}

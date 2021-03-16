@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            width: 100px;
+            height: 100px;
+            background-color: #c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="text"></div>
+    
+    <script>
+            var text = document.getElementsByClassName('text')[0];
+            text.onmousedown = function(e){
+                console.log(e)
+            }
+    </script>
+</body>
+</html>
